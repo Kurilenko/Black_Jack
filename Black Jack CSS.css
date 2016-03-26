@@ -1,0 +1,138 @@
+/*Black Jack*/
+
+/*
+	body {
+        padding: 0;
+        margin: 0;
+		height: 100%;
+        width: 100%
+	}
+*/
+
+    
+	#table {
+		position: absolute;
+		height: 80%;
+		width: 70%;
+		background-color: #1a1;
+		border-radius: 100%;
+		margin: 5% 15%;
+	}
+    
+
+	#players>div {
+		position: absolute;
+    	height: 15%;
+        min-height: 60px;
+    	width: 6%;
+        min-width: 60px;
+    	background-color: #01ee01;
+    	border-radius: 20%;
+    	display: none;
+	}
+
+	#players>div>p {
+		margin: 10px;
+	}
+
+	span#balance {
+		position: absolute;
+   	 	top: 53%;
+    	left: 23%;
+	}	
+
+	#player1 {
+		top: 43%;
+    	left: 1%;
+	}
+	#player1 > div {
+		position: absolute;
+    	top: 25%;
+    	left: 140%;
+	}
+
+	#player2 {
+		top: 43%;
+    	right: 1.5%;
+        
+	}
+	#player2 > div {
+		position: absolute;
+    	top: 25%;
+    	left: -60%;
+	}
+
+	#player3 {
+		top: 1%;
+   		left: 44%;
+	}
+	#player3 > div {
+		position: absolute;
+		top: 140%;
+	}
+	#player4 {
+		top: 84%;
+   		left: 44%;
+	}
+
+	#player4 > div {
+		position: absolute;
+    	top: -93%;
+    	left: 40%;
+	}	
+
+	#cardDeck {
+		position: absolute;
+		top: 39%;
+    	left: 46%;
+		height: 67px;
+		width: 47.15px;
+		background: url("600px-svg-cards-2.0.png") -92.3px 737px; /* 737 vse 536 - 3ka 4erv*/
+	}
+	#test {
+		position: absolute;
+		top: 66%;
+    	left: 59%;
+		height: 67px;
+		width: 47.15px;
+	}
+
+	.playerCards  {
+        top: px;
+        height: 67px;
+        width: 300px;
+	}
+
+.Card {
+    position: relative;
+    top: -15px;
+    height: 67px;
+    width: 47px;
+    margin: 3px;
+    display: inline-block;
+}
+
+button {
+    padding: 1px;
+    position: relative;
+    top: -45px;
+}
+
+button.player1 {
+    left: -70px;
+}
+
+button.player2 {
+    left: 80px;
+}
+
+button.player3 {
+    top: -105px;
+}
+
+button.player4 {
+    top: 28px;
+}
+
+
+/*Black Jack*/
