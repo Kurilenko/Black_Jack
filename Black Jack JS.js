@@ -145,11 +145,12 @@ window.onload = function () {
            
            НА ГИТ ВСЕ ЭТО НУЖНО ЗАЛИТЬ, залил
            */
+           
+           
        } else if ($(this).hasClass('Full')) {
             alert('Full');  
        }
     });
     
-    var testvariable = 5;
 
 }; // window.onload
