@@ -17,7 +17,7 @@ window.onload = function () {
 			placeOnTheTable.style.display = 'block';
 
 			placeOnTheTable.innerHTML = '<p>' + this.playerName + '</p>' + '<br/>' + '<span id=balance>' + this.score + '</span>' +
-			'<div class=playerCards></div>' + '<button class="player'+ i +' Get">Get Card</button> <button class="player'+ i + ' Full">Full</button>';
+			'<div class=playerCards></div>' + '<div id="buttons"> <button class="player'+ i +' Get">Get Card</button> <button class="player'+ i + ' Full">Full</button> </div>';
 
 		};
 
@@ -91,16 +91,16 @@ window.onload = function () {
 		сортировать массив карт случайным образом.
 	 */
 
-	 $('.playerCards').eq(3).append('<div class=Card></div>');
-
-	 var fg ='url("600px-svg-cards-2.0.png") ' + cards[0].x + 'px ' + cards[0].y + 'px';
-
-	  $('.Card').css('background', fg);
-    
-    $('.playerCards').eq(1).append('<div class=Card></div>');
-    fg ='url("600px-svg-cards-2.0.png") ' + cards[1].x + 'px ' + cards[1].y + 'px';
-
-	  $('.Card').eq(0).css('background', fg);
+//	 $('.playerCards').eq(3).append('<div class=Card></div>');
+//
+//	 var fg ='url("600px-svg-cards-2.0.png") ' + cards[0].x + 'px ' + cards[0].y + 'px';
+//
+//	  $('.Card').css('background', fg);
+//    
+//    $('.playerCards').eq(1).append('<div class=Card></div>');
+//    fg ='url("600px-svg-cards-2.0.png") ' + cards[1].x + 'px ' + cards[1].y + 'px';2
+//
+//	  $('.Card').eq(0).css('background', fg);
     
     $('button').click(function(){ // при клиеке на любую кнопку
         var button=$(this); 
@@ -127,6 +127,19 @@ window.onload = function () {
            
            //показать New счет
             $(player).children('#balance').html(players[playerNum].score);
+           
+           //расположить кнопки, блочить их при наборе больше 21 оч
+           
+           if (players[playerNum].score >1) {
+               $('#buttons').append('<div id="krestik"></div>');
+               $('#krestik').css('background', 'url("krestik2.png") no-repeat center');
+               
+               $(player).hover(function(){
+                   $(this).css('text-decoration', 'underline');
+               }, function(){
+                   $(this).css('text-decoration', 'none');
+               })
+           }
            
            // delate this card from Deck
            cards.splice(0,1);

@@ -115,11 +115,10 @@
 button {
     padding: 1px;
     position: relative;
-    top: -45px;
 }
 
 button.player1 {
-    left: -70px;
+    left: -150px;
 }
 
 button.player2 {
@@ -127,12 +126,18 @@ button.player2 {
 }
 
 button.player3 {
-    top: -105px;
+    top: -155px;
 }
 
 button.player4 {
     top: 28px;
 }
 
-
+#krestik {
+    position: relative;
+    min-height: 105px;
+    width: 82px;
+    min-width: 10px;
+    top: 10%
+}
 /*Black Jack*/
