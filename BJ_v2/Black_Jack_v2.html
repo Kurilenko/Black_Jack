@@ -1,0 +1,80 @@
+<html>
+<head>
+    <meta charset="utf-8">
+	<title> Black Jack_v2</title>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
+    <!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    
+    <script src="Black_Jack_v2_JS.js"></script>
+    <link rel="stylesheet" type="text/css" href='Black_Jack_v2_CSS.css'>
+   
+</head>
+<body>
+<div id='dealer'>Dealer</div>    
+    
+   
+    <div class="players">
+
+        <div class="player player1">
+            <span class="playerName">Player1</span>
+            <span class="balance"> </span>
+            <span class="score"> </span>
+            <br/> 
+            <button class="getCard ">Get card</button>
+            <button class="stand ">Stand</button>
+        </div>
+        
+        <div class="player player2">
+            <span class="playerName">Player2</span>
+            <span class="balance"> </span>
+            <span class="score"> </span>
+            <br/>  
+            <button class="getCard ">Get card</button>
+            <button class="stand ">Stand</button>
+        </div>
+        
+        <div class="player player3" >
+            <span class="playerName"> Player3 </span>
+            <span class="balance"> </span>
+            <span class="score"> </span>
+            <br/> 
+            <button class="getCard ">Get card</button>
+            <button class="stand ">Stand</button>
+        </div>
+        
+        <div class="player player4" >
+            <span class="playerName">Player4</span> 
+            <span class="balance"> </span>
+            <span class="score"> </span>
+            <br/> 
+            <button class="getCard ">Get card</button>
+            <button class="stand ">Stand</button>
+        </div>
+ </div>
+    
+    <a href="#config" id='popup' style="display: none">erfer</a>
+    <form id='config' style="display:none">
+       <h1>Настройки</h1> 
+        <hr/>
+        Количество игроков 
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select> <br/>
+        
+         Имена: <input type="text" placeholder="Не обязательно"/> <br/>
+        <span id='comment'>*Через запятую</span> <br/>
+        <button type="submit">Начать игру</button>
+    </form>
+    
+</body>
+</html>

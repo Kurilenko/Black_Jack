@@ -1,0 +1,103 @@
+    
+body {
+		background: url(blackjackTable2.jpg) no-repeat;
+        background-size: cover;
+    position: relative;
+}
+        
+    input, span, select {
+        display: inline;
+        margin-bottom: 10px;
+    }
+
+    #comment {
+        position: relative;
+        left: 3.5em;
+        top: -10px;
+        color: rgb(228,165,0);
+    }
+
+        #dealer {
+            font-family: sans-serif;
+            font-size: 3em;
+            font-style: oblique;
+            color: firebrick;
+            position: relative;
+            top: 10%;
+            left: 40%;
+            width: 30%;
+        }
+/*         переписывать ширину
+        1 блок 24%
+        2 - 48
+        3- 72
+        4 - 96*/
+        .players {
+            position: relative;
+            top: 65%;
+            height: 25%;
+            width: 96%;
+            margin: auto;   
+        }
+/*        1 блок - 96%
+        2 - 49 
+        3 - 33
+        4 - 24*/
+            .player {
+                position: relative;
+                display: none;
+                height: 100%;
+                width: 24%;
+                background-color: aqua;
+                margin: auto;
+                border: 3px solid grey;
+                border-radius: 8%;
+            }
+
+                .playerName {
+                    margin-left: 3%;
+                    font-size: 1.5em;
+                }
+    
+                .balance, .score {
+                    font-size: 1.2em;
+                }
+
+                .getCard {
+                    left: 18%;
+                }
+
+                 .stand {
+                    left: 50%;
+                }
+
+                .getCard, .stand {
+                    position: absolute;
+                    display: inline-block;
+                    bottom: 10px;
+                    width: 30%;
+                      cursor: pointer;
+                      text-align: center;
+                      outline: none;
+                      border: none;
+                      text-decoration: none;
+                      color: #fff;
+                      background-color: #4CAF50;                      border-radius: 10px;
+                      box-shadow: 0 4px #999;
+                }
+
+                .getCard:hover, .stand:hover {background-color: #3e8e41}
+
+                .getCard:active, .stand:active {
+                  background-color: #3e8e41;
+                  box-shadow: 0 0px #666;
+                  transform: translateY(4px);
+                }
+
+                .card {
+                    position: relative;
+                    display: inline-block;
+                    height: 67px;
+                    width: 47px;
+                }
+
